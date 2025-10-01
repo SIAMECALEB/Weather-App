@@ -1,0 +1,131 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  transition: background 0.5s ease;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Title */
+.title {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Search box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  width: 70%;
+  font-size: 1rem;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  border: none;
+  background: #4a47a3;
+  color: white;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+  background: #6c63ff;
+}
+
+/* Weather card */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 0.8s ease;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #4a47a3;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 10px;
+}
+
+#temperature {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+#toggle-temp {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 15px;
+  background: #4a47a3;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#toggle-temp:hover {
+  background: #6c63ff;
+}
+
+/* Loading */
+.loading {
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Hidden utility */
+.hidden {
+  display: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
